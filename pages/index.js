@@ -13,7 +13,7 @@ export default function Home() {
           email: values.email,
       }
 
-      const sendResponse = await Axios.post("http://localhost:8000/api", request);
+      const sendResponse = await Axios.post("https://big-yellow-box.herokuapp.com/api", request);
       console.log(request);
       
   }
