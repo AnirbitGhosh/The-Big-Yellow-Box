@@ -13,7 +13,7 @@ export default function Home() {
           email: values.email,
       }
 
-      const sendResponse = await Axios.post("https://big-yellow-box.herokuapp.com/api", request);
+      const sendResponse = await Axios.post("https://sheet.best/api/sheets/09b84277-3474-49cd-97e0-58443c2debe7", request);
       console.log(request);
       
   }
