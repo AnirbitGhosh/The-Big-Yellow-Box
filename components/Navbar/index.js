@@ -6,6 +6,7 @@ import {
     NavLogo,  
 } from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
+import Link from 'next/link';
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = ({toggle}) => {
         <IconContext.Provider value={{ color: 'white'}}>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo onClick={toggleHome}>THE BIG YELLOW BOX</NavLogo>
+                    <Link href="/"><NavLogo onClick={toggleHome}>THE BIG YELLOW BOX</NavLogo></Link>
                 </NavbarContainer>
             </Nav>
         </IconContext.Provider>

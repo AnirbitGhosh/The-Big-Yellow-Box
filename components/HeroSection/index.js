@@ -33,10 +33,9 @@ const HeroSection = (props) => {
                     backgroundImage: `url(${Img})`,
                     height: "100%", width: "100%", backgroundRepeat: "no-repeat", backgroundSize: 'cover'
                 }} >
-                {/* <VideoBg autoPlay={true} loop muted src={Video} type="video/mp4" /> */}
             </HeroBg>
             <HeroContent>
-                <HeroH1>Type your business idea, thoughts, feelings, confessions or what you had for breakfast this morning into the big yellow box. If we like your idea, we&apos;ll go with it and give you back 10% of the profits. That&apos;s it!</HeroH1>
+                <HeroH1>Type your business idea, thoughts, feelings, confessions or what you had for breakfast this morning into the big yellow box. If we like your idea, we'll go with it and give you back 10% of the profits. That's it!</HeroH1>
                 <br />
                 <FormWrap>
                     <FormContent>

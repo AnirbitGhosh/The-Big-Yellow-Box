@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? '#f9ca00' : '#f9ca00')};
+    background: ${({scrollNav}) => (scrollNav ? '#f3d458' : '#f3d458')};
     height: 100px;
     margin-top: -8px;
     margin-left: -8px;

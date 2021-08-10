@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 840px;
     position: relative;
     z-index: 1;
 
@@ -18,12 +18,27 @@ export const HeroContainer = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        /* background: linear-gradient(
-            180deg, 
-            rgba(0,0,0,0.2) 0%, 
-            rgba(0,0,0,0.6) 100%
-            ),
-            linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%); */
+        z-index: 2;
+    }
+`;
+
+export const TermsContainer = styled.div`
+    background: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 0 30px;
+    height: 840px;
+    position: relative;
+    z-index: 1;
+
+    :before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         z-index: 2;
     }
 `;
@@ -74,7 +89,6 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-    margin-top: 24px;
     color: #fff;
     font-size: 24px;
     text-align: center;
@@ -96,6 +110,20 @@ export const HeroBtnWrapper = styled.div`
     align-items: center;
 `;
 
+export const HeroTerms = styled.span`
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+
+    @media screen and (max-width: 768px){
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 20px;
+    }
+
+`
+
 export const ArrowForward = styled(MdArrowForward)`
     margin-left: 8px;
     font-size: 20px;
@@ -107,6 +135,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 `;
 
 export const FormWrap = styled.div`
+    /* margin-bottom: 10px; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -167,7 +196,7 @@ export const FormLabel = styled.label`
 ` 
 
 export const IdeaInput = styled.textarea`
-    background: #f9ca00;
+    background: #f3d458;
     padding: 16px 16px;
     margin-bottom: 32px;
     border: none;
@@ -177,7 +206,7 @@ export const IdeaInput = styled.textarea`
 `
 
 export const EmailInput = styled.input`
-    background: #f9ca00;
+    background: #f3d458;
     padding: 16px 16px;
     margin-bottom: 32px;
     border: none;
@@ -191,7 +220,7 @@ export const EmailInput = styled.input`
 
 export const FormButton = styled.button`
     border-radius: 50px;
-    background: ${({primary}) => (primary ? 'black' : '#010606')};
+    background: ${({primary}) => (primary ? 'black' : '#f3d458')};
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
     color: ${({dark}) => (dark ? '#fff' : 'black')};
@@ -207,7 +236,7 @@ export const FormButton = styled.button`
     
     &:hover{
         transition: all 0.2s ease-in-out;
-        background: ${({primary}) => (primary ? '#fff' : 'black')};
+        background: ${({primary}) => (primary ? '#f3d458' : 'black')};
         color: ${({dark}) => (dark ? '#010606' : '#fff')}
     }
 `

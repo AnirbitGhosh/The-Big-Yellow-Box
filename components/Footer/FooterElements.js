@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {Link as LinkS} from 'react-scroll';
 
 export const FooterContainer = styled.footer`
-    background-color: #f9ca00;
+    background-color: #f3d458;
     margin-left: -10px;
     margin-right: -10px;
 `
@@ -17,7 +17,7 @@ export const FooterWrap = styled.div`
     margin: 0 auto;
 `
 
-export const FooterLinksContainer = styled.div`
+export const FooterLinksContainer = styled.section`
     display: flex;
     justify-content: center;
 
@@ -40,7 +40,7 @@ export const FooterLinkItems = styled.div`
     align-items: flex-start;
     margin: 16px;
     text-align: left;
-    width: 160px;
+    width: 300px;
     box-sizing: border-box;
     color: black;
 
@@ -52,15 +52,22 @@ export const FooterLinkItems = styled.div`
 `
 
 export const FooterLinkTitle = styled.h1`
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 16px;
+`
+
+export const FooterItem = styled.span`
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
 `
 
 export const FooterLinkS = styled(LinkS)`
     color: black;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    font-size: 14px;
+    font-size: 15px;
 
     &:hover{
         /* color: #01bf71; */
@@ -68,6 +75,26 @@ export const FooterLinkS = styled(LinkS)`
         transition: 0.2s ease-in-out;
         cursor: pointer;
     }
+`
+
+export const FooterSocial = styled.a`
+    color: black;
+    font-size: 18px;
+
+    &:hover{
+        /* color: #01bf71; */
+        color: #50504c;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+`
+
+export const FooterSocialIcons = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: left;
+    width: 50px;
 `
 
 export const SocialMedia = styled.section`
@@ -107,9 +134,9 @@ export const SocialLogo = styled.h1`
     }
 `
 
-export const WebsiteRights = styled.small`
+export const WebsiteRights = styled.text`
     color: black;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 `
 
 export const SocialIcons = styled.div`
@@ -121,7 +148,7 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
     color: black;
-    font-size: 24px;
+    font-size: 28px;
 
     &:hover{
         /* color: #01bf71; */

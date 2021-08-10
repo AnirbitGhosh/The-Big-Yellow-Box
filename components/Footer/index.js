@@ -8,6 +8,9 @@ import{
     FooterLinkItems,
     FooterLinkTitle,
     FooterLinkS, 
+    FooterItem,
+    FooterSocial,
+    FooterSocialIcons,
     SocialMedia,
     SocialMediaWrap,
     SocialLogo,
@@ -15,12 +18,13 @@ import{
     SocialIcons,
     SocialIconLink,
 } from './FooterElements';
-
+import Link from 'next/link';
 import {
     FaFacebook,
     FaTwitter,
-    FaYoutube, 
     FaLinkedin,
+    FaInstagram,
+    FaRedditAlien,
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -35,47 +39,48 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>About us</FooterLinkTitle>
-                            <FooterLinkS to="#">Demo</FooterLinkS>
-                            <FooterLinkS to="#">Testimonials</FooterLinkS>
-                            <FooterLinkS to="#">Careers</FooterLinkS>
-                            <FooterLinkS to="#">Team Members</FooterLinkS>
-                            <FooterLinkS to="#">Terms of Service</FooterLinkS>
+                            <Link href="/terms"><FooterLinkS>Terms of Service</FooterLinkS></Link>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Contact us</FooterLinkTitle>
-                            <FooterLinkS to="#">Contact</FooterLinkS>
-                            <FooterLinkS to="#">Support</FooterLinkS>
-                            <FooterLinkS to="#">Sponsorship</FooterLinkS>
-                            <FooterLinkS to="#">Locations</FooterLinkS>
+                        <FooterLinkTitle>Contact us</FooterLinkTitle>
+                            <FooterItem>Rory Dick, CEO &#38; Founder, The Big Yellow Box</FooterItem>
+                            <FooterItem>Email: <u>rory@crowdapp.net</u></FooterItem>
+                            <FooterItem>Phone: <u>+44 12345678</u></FooterItem>
+                            <FooterSocialIcons>
+                            <FooterSocial href='//in.linkedin.com/' target="_blank" aria-label="Linkedin">
+                                <FaLinkedin />
+                            </FooterSocial>
+                            </FooterSocialIcons>
                         </FooterLinkItems>
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Sitemap</FooterLinkTitle>
-                            <FooterLinkS to="about us">About us</FooterLinkS>
-                            <FooterLinkS to="clients">Clients</FooterLinkS>
-                            <FooterLinkS to="industry solutions">Industry solutions</FooterLinkS>
-                            <FooterLinkS to="what we do">What we do</FooterLinkS>
-                            <FooterLinkS to="/signin">Sign up</FooterLinkS>
+                            <FooterLinkTitle><br></br></FooterLinkTitle>
+                            <FooterItem>Abcde, example</FooterItem><br />
+                            <FooterItem>Email: <u>test@example.com</u></FooterItem>                                
+                            <FooterItem>Phone: <u>+44 12345678</u></FooterItem>
+                            <FooterSocialIcons>
+                            <FooterSocial href='//in.linkedin.com/' target="_blank" aria-label="Linkedin">
+                                <FaLinkedin />
+                            </FooterSocial>
+                            </FooterSocialIcons>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo onClick={toggleHome}>THE BIG YELLOW BOX</SocialLogo>
+                        <Link href="/"><SocialLogo onClick={toggleHome}>THE BIG YELLOW BOX</SocialLogo></Link>
                         <WebsiteRights>The Big Yellow Box © {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href='//www.facebook.com/' target="_blank" aria-label="Facebook">
                                 <FaFacebook />
                             </SocialIconLink>
                             <SocialIconLink href='//twitter.com/' target="_blank" aria-label="Twitter">
-                                <FaTwitter />
+                                <FaTwitter/>
                             </SocialIconLink>
-                            <SocialIconLink href='//in.linkedin.com/' target="_blank" aria-label="Linkedin">
-                                <FaLinkedin />
+                            <SocialIconLink href='https://www.reddit.com' target="_blank" aria-label="Reddit">
+                                <FaRedditAlien />
                             </SocialIconLink>
-                            <SocialIconLink href='//www.youtube.com/' target="_blank" aria-label="Youtube">
-                                <FaYoutube />
+                            <SocialIconLink href='//www.instagram.com/' target="_blank" aria-label="Instagram">
+                                <FaInstagram />
                             </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>

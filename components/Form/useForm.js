@@ -21,7 +21,10 @@ const useForm = (props, validate) => {
 
         setErrors(validate(values));
 
-        props.formHandler(values);
+        if(values.idea.trim() && values.email){
+            props.formHandler(values);
+        }
+        
         setValues({idea: "", email: ""});
     };
 
