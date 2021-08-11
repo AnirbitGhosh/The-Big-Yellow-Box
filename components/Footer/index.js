@@ -70,16 +70,16 @@ const Footer = () => {
                         <Link href="/"><SocialLogo onClick={toggleHome}>THE BIG YELLOW BOX</SocialLogo></Link>
                         <WebsiteRights>The Big Yellow Box © {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href='//www.facebook.com/' target="_blank" aria-label="Facebook">
+                            <SocialIconLink aria-label="Facebook">
                                 <FaFacebook />
                             </SocialIconLink>
-                            <SocialIconLink href='//twitter.com/' target="_blank" aria-label="Twitter">
+                            <SocialIconLink aria-label="Twitter">
                                 <FaTwitter/>
                             </SocialIconLink>
-                            <SocialIconLink href='https://www.reddit.com' target="_blank" aria-label="Reddit">
+                            <SocialIconLink aria-label="Reddit">
                                 <FaRedditAlien />
                             </SocialIconLink>
-                            <SocialIconLink href='//www.instagram.com/' target="_blank" aria-label="Instagram">
+                            <SocialIconLink href='https://www.instagram.com/thebigyellowbox/' target="_blank" aria-label="Instagram">
                                 <FaInstagram />
                             </SocialIconLink>
                         </SocialIcons>
