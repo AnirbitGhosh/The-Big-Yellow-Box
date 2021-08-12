@@ -195,6 +195,15 @@ export const FormLabel = styled.label`
     font-family: 'Roboto Mono', monospace;
 ` 
 
+export const TermsLabel = styled.label`
+    margin-left: 15px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+` 
+
 export const IdeaInput = styled.textarea`
     background: #f3d458;
     padding: 16px 16px;

@@ -77,6 +77,20 @@ export const FooterLinkS = styled(LinkS)`
     }
 `
 
+export const FooterLink = styled.a`
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+
+    &:hover{
+        /* color: #01bf71; */
+        color: #50504c;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+`
+
 export const FooterSocial = styled.a`
     color: black;
     font-size: 18px;
@@ -134,7 +148,7 @@ export const SocialLogo = styled.h1`
     }
 `
 
-export const WebsiteRights = styled.text`
+export const WebsiteRights = styled.small`
     color: black;
     margin-bottom: 18px;
 `

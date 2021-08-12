@@ -13,9 +13,12 @@ import {
     IdeaInput,
     EmailInput,
     FormButton,
+    TermsLabel,
 } from './HeroElements';
 import useForm from '../Form/useForm';
 import validate from '../Form/validateInfo';
+import Link from 'next/link';
+import { FaCheckSquare } from 'react-icons/fa';
 
 const HeroSection = (props) => {
     const [hover, setHover] = useState(false);
@@ -50,7 +53,7 @@ const HeroSection = (props) => {
                             />
                             {errors.idea && <p>{errors.idea}</p>}
 
-                            <FormLabel htmlFor='email'>Enter your email address so we can contact you</FormLabel>
+                            <FormLabel htmlFor='email'>Enter your email address if you&apos;d like to be contacted by us (Optional)</FormLabel>
                             <EmailInput 
                             id='email' 
                             type='email' 
@@ -58,7 +61,6 @@ const HeroSection = (props) => {
                             value={values.email}
                             onChange={handleChange}
                             />
-                            {errors.email && <p>{errors.email}</p>}
 
                             <FormButton type='submit' onMouseEnter={onHover} 
                                 onMouseLeave={onHover} 
@@ -66,6 +68,7 @@ const HeroSection = (props) => {
                                 dark='true'>
                                     Submit {hover ? <ArrowForward /> : <ArrowRight />}
                             </FormButton>
+                            <TermsLabel htmlFor='email'>By clicking submit you're agreeing to our <Link href="/terms">terms</Link> of service <FaCheckSquare /></TermsLabel>
                         </Form>
                     </FormContent>
                 </FormWrap>

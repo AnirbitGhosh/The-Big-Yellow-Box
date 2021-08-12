@@ -7,7 +7,7 @@ import{
     FooterLinksWrapper,
     FooterLinkItems,
     FooterLinkTitle,
-    FooterLinkS, 
+    FooterLink, 
     FooterItem,
     FooterSocial,
     FooterSocialIcons,
@@ -36,34 +36,7 @@ const Footer = () => {
         <FooterContainer>
             <FooterWrap>
                 <FooterLinksContainer>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About us</FooterLinkTitle>
-                            <Link href="/terms"><FooterLinkS>Terms of Service</FooterLinkS></Link>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                        <FooterLinkTitle>Contact us</FooterLinkTitle>
-                            <FooterItem>Rory Dick, CEO &#38; Founder, The Big Yellow Box</FooterItem>
-                            <FooterItem>Email: <u>rory@crowdapp.net</u></FooterItem>
-                            <FooterItem>Phone: <u>+44 12345678</u></FooterItem>
-                            <FooterSocialIcons>
-                            <FooterSocial href='//in.linkedin.com/' target="_blank" aria-label="Linkedin">
-                                <FaLinkedin />
-                            </FooterSocial>
-                            </FooterSocialIcons>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle><br></br></FooterLinkTitle>
-                            <FooterItem>Abcde, example</FooterItem><br />
-                            <FooterItem>Email: <u>test@example.com</u></FooterItem>                                
-                            <FooterItem>Phone: <u>+44 12345678</u></FooterItem>
-                            <FooterSocialIcons>
-                            <FooterSocial href='//in.linkedin.com/' target="_blank" aria-label="Linkedin">
-                                <FaLinkedin />
-                            </FooterSocial>
-                            </FooterSocialIcons>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
+                    
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
@@ -76,7 +49,7 @@ const Footer = () => {
                             <SocialIconLink aria-label="Twitter">
                                 <FaTwitter/>
                             </SocialIconLink>
-                            <SocialIconLink aria-label="Reddit">
+                            <SocialIconLink  aria-label="Reddit">
                                 <FaRedditAlien />
                             </SocialIconLink>
                             <SocialIconLink href='https://www.instagram.com/thebigyellowbox/' target="_blank" aria-label="Instagram">
