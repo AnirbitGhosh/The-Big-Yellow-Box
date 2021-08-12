@@ -68,7 +68,7 @@ const HeroSection = (props) => {
                                 dark='true'>
                                     Submit {hover ? <ArrowForward /> : <ArrowRight />}
                             </FormButton>
-                            <TermsLabel htmlFor='email'>By clicking submit you're agreeing to our <Link href="/terms">terms</Link> of service <FaCheckSquare /></TermsLabel>
+                            <TermsLabel htmlFor='email'>By clicking submit you&apos;re agreeing to our <Link href="/terms">terms</Link> of service <FaCheckSquare /></TermsLabel>
                         </Form>
                     </FormContent>
                 </FormWrap>
