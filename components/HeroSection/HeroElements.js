@@ -28,7 +28,7 @@ export const TermsContainer = styled.div`
     justify-content: center;
     align-items: top;
     padding: 0 30px;
-    height: 840px;
+    height: 1000px;
     position: relative;
     z-index: 1;
 
@@ -63,6 +63,18 @@ export const VideoBg = styled.video`
 `;
 
 export const HeroContent = styled.div`
+    margin-top: 25px;
+    z-index: 3;
+    max-width: 1200px;
+    position: absolute;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const TermsHeroContent = styled.div`
+    margin-top: 20px;
     z-index: 3;
     max-width: 1200px;
     position: absolute;
@@ -100,6 +112,24 @@ export const HeroP = styled.p`
 
     @media screen and (max-width: 480px){
         font-size: 18px;
+    }
+`;
+
+export const TermsP = styled.p`
+    padding-top: 20px;
+    margin-left: 50px;
+    font-weight: 400;
+    color: black;
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+
+    @media screen and (max-width: 768px){
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 10px;
     }
 `;
 
@@ -201,6 +231,13 @@ export const TermsLabel = styled.label`
     font-size: 12px;
     font-weight: 400;
     color: black;
+    font-family: 'Roboto Mono', monospace;
+` 
+
+export const TermsIcon = styled.label`
+    font-size: 14px;
+    font-weight: 400;
+    color: green;
     font-family: 'Roboto Mono', monospace;
 ` 
 

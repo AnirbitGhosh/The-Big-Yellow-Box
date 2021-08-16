@@ -14,6 +14,7 @@ import {
     EmailInput,
     FormButton,
     TermsLabel,
+    TermsIcon,
 } from './HeroElements';
 import useForm from '../Form/useForm';
 import validate from '../Form/validateInfo';
@@ -38,7 +39,7 @@ const HeroSection = (props) => {
                 }} >
             </HeroBg>
             <HeroContent>
-                <HeroH1>Type your business ideas, thoughts, feelings, confessions, or what you had for breakfast this morning into the big yellow box. If we like your idea, we&apos;ll go with it and give you back 10% of the profits. That&apos;s it!</HeroH1>
+                <HeroH1>Type your business idea, thoughts, feelings, confessions, or what you had for breakfast this morning into the big yellow box. If we like your idea, we&apos;ll go with it and give you back 10% of the profits. That&apos;s it!</HeroH1>
                 <br />
                 <FormWrap>
                     <FormContent>
@@ -53,7 +54,7 @@ const HeroSection = (props) => {
                             />
                             {errors.idea && <p>{errors.idea}</p>}
 
-                            <FormLabel htmlFor='email'>Enter your email address if you&apos;d like to be contacted by us (Optional)</FormLabel>
+                            <FormLabel htmlFor='email'>Enter your email address if you&apos;d like to be contacted (optional)</FormLabel>
                             <EmailInput 
                             id='email' 
                             type='email' 
@@ -68,7 +69,7 @@ const HeroSection = (props) => {
                                 dark='true'>
                                     Submit {hover ? <ArrowForward /> : <ArrowRight />}
                             </FormButton>
-                            <TermsLabel htmlFor='email'>By submitting you are agreeing to our <Link href="/terms">terms</Link>.<FaCheckSquare /></TermsLabel>
+                            <TermsLabel htmlFor='email'>By submitting you are agreeing to our <Link href="/terms">terms</Link> <TermsIcon><FaCheckSquare /></TermsIcon></TermsLabel>
                         </Form>
                     </FormContent>
                 </FormWrap>

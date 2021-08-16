@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react'
 import { IconContext } from 'react-icons/lib';
 import { 
     Nav, 
@@ -9,20 +8,6 @@ import { animateScroll as scroll } from 'react-scroll';
 import Link from 'next/link';
 
 const Navbar = ({toggle}) => {
-    const [scrollNav, setScrollNav] = useState(false);
-
-    const changeNav = () => {
-        if(window.scrollY >= 80){
-            setScrollNav(true);
-        }else {
-            setScrollNav(false);
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', changeNav)
-    }, [])
-
     const toggleHome = () => {
         scroll.scrollToTop();
     }
@@ -30,9 +15,9 @@ const Navbar = ({toggle}) => {
     return (
         <>
         <IconContext.Provider value={{ color: 'white'}}>
-            <Nav scrollNav={scrollNav}>
+            <Nav>
                 <NavbarContainer>
-                    <Link href="/"><NavLogo onClick={toggleHome}>THE BIG YELLOW BOX</NavLogo></Link>
+                    <Link href="/"><NavLogo onClick={toggleHome}>The Big Yellow Box</NavLogo></Link>
                 </NavbarContainer>
             </Nav>
         </IconContext.Provider>

@@ -3,7 +3,7 @@ import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: ${({scrollNav}) => (scrollNav ? '#f3d458' : '#f3d458')};
-    height: 100px;
+    height: 130px;
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
@@ -63,7 +63,7 @@ export const NavLogo = styled.h1`
     }
 
     @media screen and (max-width: 768px){
-        font-size: 36px;
+        font-size: 40px;
         font-weight: bold;
     }
 
